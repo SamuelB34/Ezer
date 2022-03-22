@@ -96,6 +96,7 @@ h2{
 }
 @media (min-width: 400px){    /* este modifica iPhone7 y iPad */
     .fotoo{
+        display: flex;
         justify-content: center;
         align-content: center;
     }
