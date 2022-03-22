@@ -93,7 +93,7 @@ h2{
 }
 
 
-@media (min-width: 374px){   /* este modifica iphonex */
+@media (min-width: 350px){   /* este modifica iphonex */
     .fotingo{
         justify-content: center;
     }
