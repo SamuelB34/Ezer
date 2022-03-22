@@ -95,8 +95,9 @@ h2{
     }
 }
 @media (min-width: 500px){    /* este modifica iPhone7 y iPad */
-    .foto{
-        margin-left: 3.8rem;
+    .fotoo{
+        justify-content: center;
+        align-content: center;
     }
     .fotingo{
         margin-left: 2.5rem;
