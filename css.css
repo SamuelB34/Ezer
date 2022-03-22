@@ -90,14 +90,11 @@ h2{
 }
 
 @media (min-width: 374px){   /* este modifica iphonex */
-    .foto{
-        margin-left: 2.5rem;
-    }
     .fotingo{
-        margin-left: 1rem;
+        justify-content: center;
     }
 }
-@media (min-width: 413px){    /* este modifica iPhone7 y iPad */
+@media (min-width: 500px){    /* este modifica iPhone7 y iPad */
     .foto{
         margin-left: 3.8rem;
     }
