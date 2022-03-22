@@ -90,10 +90,11 @@ h2{
 }
 .fotoo{
     display: flex;
+    justify-content: center;
 }
 
 
-@media (min-width: 350px){   /* este modifica iphonex */
+@media (min-width: 300px){   /* este modifica iphonex */
     .fotingo{
         justify-content: center;
     }
