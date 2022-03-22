@@ -89,9 +89,15 @@ h2{
     display: flex;
 }
 
+
 @media (min-width: 374px){   /* este modifica iphonex */
     .fotingo{
         justify-content: center;
+    }
+    .fotoo{
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 }
 @media (min-width: 400px){    /* este modifica iPhone7 y iPad */
