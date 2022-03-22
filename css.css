@@ -88,6 +88,9 @@ h2{
     width: 300px;
     display: flex;
 }
+.fotoo{
+    display: flex;
+}
 
 
 @media (min-width: 374px){   /* este modifica iphonex */
@@ -95,14 +98,12 @@ h2{
         justify-content: center;
     }
     .fotoo{
-        display: flex;
         justify-content: center;
         align-content: center;
     }
 }
 @media (min-width: 400px){    /* este modifica iPhone7 y iPad */
     .fotoo{
-        display: flex;
         justify-content: center;
         align-content: center;
     }
