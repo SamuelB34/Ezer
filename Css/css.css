@@ -153,7 +153,7 @@ h2{
 }
 
 
-@media (min-width: 374px){   /* este modifica iphonex */
+@media (min-width: 300px){   /* este modifica iphonex */
     .fotoo{
         justify-content: center;
         align-content: center;
