@@ -166,7 +166,7 @@ h3{
 }
 @media (max-width: 500px){
     .owl-carousel h3{
-        font-size: 13px;
+        font-size: 11px;
         text-align: center;
         color: white;
     }
