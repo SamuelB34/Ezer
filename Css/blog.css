@@ -164,7 +164,13 @@ h3{
 .owl-nav button{
     display: none;
 }
-
+@media (max-width: 500px){
+    .owl-carousel h3{
+        font-size: 13px;
+        text-align: center;
+        color: white;
+    }
+}
 
 /* Contenido */
 .art p{/* aqui agregamos las espicificación de texto justificado */
