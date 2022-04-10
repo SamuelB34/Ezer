@@ -1,0 +1,160 @@
+:root{
+    --color1: rgb(255, 255, 255);
+    --color2: rgb(150, 88, 88);
+    --color3: rgb(145, 91, 91);
+    --color4: rgba(0, 0, 0, 0.055);
+    --color5: rgba(0, 0, 0, 0.432);
+    --colorfondo1: rgb(209, 153, 164);
+    --colorfondo2: rgb(196, 149, 149);
+}
+body{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif; /* Agregar la fuente deseada */
+    background-color: var(--color2);
+}
+h2{
+    font-size:  30px;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+
+.logo{
+    width: 30%;
+    margin-left: 2rem;
+}
+.logo2, .logo{
+    margin-top: 1rem;
+}
+.fotingo{ 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+@media (min-width: 50px){   /* este modifica iphonex */
+    .fotingo{
+        margin-left: 2rem;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        grid-column: 1 / 2;
+        display: inline;
+        width: 100%;
+    }
+    .icon {
+        display: inline;
+    }
+}
+@media (min-width: 413px){    /* este modifica iPhone7 y iPad */
+    .fotingo{
+        margin-left: .5rem;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        grid-column: 1 / 2;
+        display: inline;
+        width: 100%;
+    }
+    .icon {
+        display: inline;
+    }
+}
+@media (min-width: 768px){/* este modifica la pantalla de una laptop */
+    .logo{
+        margin-left: 3rem;
+        margin-top: 1rem;
+        /* height: 116.5px;  */
+        /* width: 594.93px; */
+        width: 90%;
+        display: inline;
+    }
+    .logo2{
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+}
+
+.menu_icn{
+    display: flex;
+    justify-content: right;
+    margin-top: 25%;
+    margin-right: 2rem;
+}
+/* .menu_icn a svg:hover{
+    transition: 300ms;
+    transform: rotate(180deg);
+} */
+.newclass{
+    visibility: hidden;
+}
+.newclass2{
+    visibility: visible;
+    transition: 300ms;
+    transform: rotate(360deg);
+}
+.menu_icn_close{
+    display: flex;
+    justify-content: right;
+    margin-top: 12%;
+    right: 2rem;
+    position: absolute;
+}
+.newclass3{
+    transition: 300ms;
+    transform: rotate(-180deg);
+    visibility: visible;
+}
+.newclass4{
+    visibility: hidden;
+}
+
+
+
+/* Barra de navegacion */
+.nav1{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    text-align: center;
+}
+.nav1 a{
+    text-decoration: none; /* quita la linea de abajo del boton */
+    color: var(--color1);
+    padding: 1.1rem;
+    font-size: 18px;
+}
+
+@media (min-width: 768px){
+
+    .nav1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .nav1 a:hover{
+       border-radius: 10%;
+    }
+
+}
+.navegador{
+    background-color: var(--colorfondo2); /* agrega el color a la barra de navegacion */
+}
+.nav1 a:hover {    /* esto es para agregarle el efecto al pasar el mouse sobre el boton */
+    transition: 400ms;
+    background-color:rgba(145, 91, 91, 0.5);
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+.contenedor{
+    max-width: 100rem;
+    margin: 0 auto;
+    /* text-align: center; */
+}

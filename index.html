@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="css/css.css" as="style"><!-- aqui mandamos a llamar el CSS -->
+    <link href="css/css.css" rel="stylesheet"> <!-- aqui mandamos a llamar el CSS -->
+    
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="preload" href="Css/normalize.css" as="style">
+
+    <link rel="stylesheet" href="Css/loader.css">
+    <link rel="preload" href="Css/loader.css" as="style">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+
+    <title>EZER</title>
+</head>
+<body class="hidden">
+    <div class="loader" id="onload">
+        <div class="imagen">
+            <div class="final">
+                <img class="imgn" src="img/Iniciador.png">
+            </div>
+        </div>
+    </div>
+
+    <header><!-- Logo -->
+        
+        <div class="fotingo">
+            <a href="#"><img class="logo" src="img/Logo.png" ></a>
+            <a class="logo2" href="#"><img class="logo2" src="img/logo2.png" ></a>
+
+            <div class="menu_icn">
+                <a href="#" class="menu-ico" onclick="showNavbar();">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="efect" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                </a>
+            </div>
+            <div class="menu_icn_close">
+                <a href="#" class="menu-ico" onclick="showNavbar();">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="efect2" class="icon icon-tabler icon-tabler-x newclass4" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        
+    </header>
+    
+ 
+    
+    <div class="navegador" id="nave2"><!-- Navegador -->
+        <nav  id="nave" class="nav1 contenedor" style="display: flex;">
+            <a href="Navegador/daily_look.html">Daily Look</a>
+            <a href="Navegador/blog.html">Blog</a>
+            <a href="Navegador/store.html">Shop</a>
+            <a href="Navegador/agendar.html">Agendar sesión</a>
+        </nav>
+    </div>
+
+    <main><!-- Preguntas y foto -->
+        <div class="preguntas">
+            <div class="fotoo">
+                <img class="foto" src="img/Foto.jpg">
+            </div>
+
+            <div class="ask">
+                <h2>¿Quién soy?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing. nsectetur, adipisicing elit.</p>
+
+                <div class="que">
+                    <h2>¿Qué es EZER?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing. nsectetur, adipisicing elit.</p>
+                </div>
+            
+            </div>
+        </div>
+    </main>    
+
+    <main><!-- Navegadores inferiores -->
+        <div class="nav-inf">
+            <nav class="nav2">
+                <a class="receta" href="#">
+                    <div class="letras">
+                        <h3>Receta Diaria</h3>
+                        <p>Explora y guarda las recetas diarias. Llenate de inspiración.</p>
+                    </div>
+                </a>
+
+                <a href="#"><img class="img-nav-inf" src="img/Rosa.jpg"></a>
+                <a href="#"><img class="img-nav-inf" src="img/Nutria.jpg"></a>
+            </nav>
+        </div>
+
+        <div class="nav-cocina">
+            <nav>
+                <h4>Equipando mi cocina</h4>
+                <div class="cocina-elem">
+                    <a href="#"><img class="espat" src="img/Espatula.jpg"></a>
+                    <a href="#"><img class="plato" src="img/Plato.jpg"></a>
+                    <a href="#"><img class="sarten" src="img/Sarten.jpg"></a>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <h5>Derechos reservados</h5>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="codigo.js"></script>
+
+    <script type="text/javascript">
+        function showNavbar(){
+            var nvbr=document.getElementById('nave');
+            var ob = document.getElementById('efect');
+            var ob2 = document.getElementById('efect2');
+
+            if(nvbr.style.display=="none"){
+                nvbr.style.display="flex"; 
+
+                ob.classList.add("newclass");
+                ob.classList.remove("newclass2");
+
+                ob2.classList.add("newclass3");
+                ob2.classList.remove("newclass4");
+            }
+            else{
+                nvbr.style.display="none";
+
+                ob.classList.remove("newclass");
+                ob.classList.add("newclass2");
+
+                ob2.classList.add("newclass4");
+                ob2.classList.remove("newclass3");
+            }
+        }
+        
+        var nvbr=document.getElementById('nave');
+        function myFunction(x) {
+        if (x.matches) { // If media query matches
+            nvbr.style.display="none";
+        } else {
+            nvbr.style.display="flex";
+        }
+        }
+        var x = window.matchMedia("(max-width: 768px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction)
+    </script>
+    
+
+</body>
+</html>
